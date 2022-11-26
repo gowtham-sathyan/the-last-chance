@@ -347,6 +347,7 @@ function theme_check(change=false){
         hrs.textContent = "06";
         const mins = document.getElementById("mins");
         mins.textContent = "00";
+        timeFlag = true;
     }
 
     // -----------------------------------
