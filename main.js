@@ -15,6 +15,10 @@ function theme_check(change=false){
             document.getElementById("hours_text").style.color = 'black';
             document.getElementById("mins").style.color = 'black';
             document.getElementById("mins_text").style.color = 'black';
+            var list= document.getElementsByTagName('p');
+            for (var i = 0; i < list.length; i++) {
+                list[i].style.color = "black";
+            }
         }
         if (page_color.includes("0")){
             document.getElementById("time_remaining").style.color = 'white';
@@ -22,6 +26,9 @@ function theme_check(change=false){
             document.getElementById("hours_text").style.color = 'white';
             document.getElementById("mins").style.color = 'white';
             document.getElementById("mins_text").style.color = 'white';
+            for (var i = 0; i < list.length; i++) {
+                list[i].style.color = "white";
+            }
         }
     }
     else{
@@ -31,6 +38,9 @@ function theme_check(change=false){
             document.getElementById("hours_text").style.color = 'white';
             document.getElementById("mins").style.color = 'white';
             document.getElementById("mins_text").style.color = 'white';
+            for (var i = 0; i < list.length; i++) {
+                list[i].style.color = "white";
+            }
         }
         else{
             document.getElementById("time_remaining").style.color = 'black';
@@ -38,6 +48,9 @@ function theme_check(change=false){
             document.getElementById("hours_text").style.color = 'black';
             document.getElementById("mins").style.color = 'black';
             document.getElementById("mins_text").style.color = 'black';
+            for (var i = 0; i < list.length; i++) {
+                list[i].style.color = "black";
+            }
         }
     }
 }
